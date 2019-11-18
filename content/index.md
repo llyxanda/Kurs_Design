@@ -1,25 +1,22 @@
 ---
 title: "Min fina titel"
+
+views:
+    byline:
+        region: after-main
+        template: anax/v2/block/default
+        data:
+            meta: 
+                type: single
+                route: block/by-line
 ---
 Min me-sida i kursen design
 =========================
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/me.jpg?h=400" class="right" caption="Alexandra Berivoe"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
-
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
-
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Jag är en 36 åring kvinna som är föd och upvuxen i Rumänien. Jag har flytat till Sverige för 10 år sen, när jag fick ett spänande jobb i en marknadsundersökningar företag som heter Ipsos. För nuvarande jobbar jag i ett förtag som heter Tobii Pro och som leverar eyetracking-lösningar för att studera mänskligt beteende. Min rol är researcher inom Consumer Insights - UX och market research avdelningen.
+Jag har studierat programering för länge sen när jag gick på gymansiet i mitt hemland och har också använt R på jobbet. Jag har alltid gilat problemlösning och jag tyker att det är roligt att lära sig nya saker. Därför har jag bestämt mig att lära webbprogrammerig och kanske jobba med det i framtiden, om jag blir duktig på det.
+Jag har också twå små guliga barn, en 4 års gammal dotter och en 6 års gammal son, som har precis börjat skola. I vår fritid brukar vi promenera och åka på museer i stan, samt leka i parken .

@@ -27,11 +27,11 @@ if ($request->getGet("style")) {
 
 // Get the active stylesheet, if any.
 $activeStyle = $session->get(StyleChooserController::getSessionKey(), null);
+
 if ($activeStyle) {
     $stylesheets = [];
     $stylesheets[] = $activeStyle;
 }
-
 // Get hgrid & vgrid
 if ($request->hasGet("hgrid")) {
     $htmlClass[] = "hgrid";

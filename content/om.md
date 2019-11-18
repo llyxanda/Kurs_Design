@@ -21,8 +21,6 @@ Om
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
 
-Skriv några kloka ord om kursen?
+Kursen Teknisk webbdesign och användbarhet, a.k.a. design, syftar till en orientering inom områden design och användbarhet, specifikt för tillämpningsområdet webb. Kursen har tekniken som utgångspunkt, där olika tekniker introduceras och används för att underlätta webbdesign och användbarhet för webbplatsen med syftet att skapa en korrekt och användarvänlig webbplats.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/screen.jpg?w=300 caption="Screen"]
