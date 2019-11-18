@@ -55,7 +55,7 @@
 }
 
 .outer-wrap {
-    width: 100%;
+    width: 80%;
     overflow: auto;
 }
 
@@ -93,4 +93,8 @@
 
 #small-pic {
     width: 7vw;
+}
+
+.figure.right {
+    float: right;
 }
