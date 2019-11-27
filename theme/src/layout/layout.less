@@ -1,0 +1,99 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+  }
+  /* Hide responsive/mobile menu, leave this to kmom02 */
+  .rm-navbar-max {
+    display: none;
+  }
+
+/**
+ * General layout
+ */
+.inner-wrap {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Header*/
+.region-header-col-1 {
+    float:left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.region-header-col-2 {
+    float:left;
+    width: 70%;
+}
+
+
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.my-navbar li {
+    display: inline;
+    padding-top: 2px 10px;
+}
+
+/* Container */
+
+.wrap-all {
+    background-color: whitesmoke;
+}
+
+.outer-wrap {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.row::after {
+    overflow: auto;
+    clear:both;
+}
+
+.inner-wrap-main {
+    padding: 30px 0;
+}
+
+/* Footer*/
+
+.inner-wrap-footer {
+    padding: 30px 0;
+}
+
+.region-footer>.block {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.figure-left {
+    float: left;
+    display: table;
+    margin-right: 1%;
+}
+
+#small-pic {
+    width: 7vw;
+}
+
+.figure.right {
+    float: right;
+}

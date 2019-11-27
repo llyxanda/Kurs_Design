@@ -1,0 +1,205 @@
+/*Header*/
+
+/*Navbar*/
+.rm-navbar {
+  text-align: center;
+  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5em;
+  line-height: 0;
+}
+
+.rm-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.my-navbar {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.my-navbar li {
+  display: inline;
+  padding-top: 2px;
+}
+
+.rm-desktop li {
+  position: relative;
+}
+
+.rm-default li {
+  display: inline-block;
+}
+
+.rm-desktop li a {
+  color: inherit;
+  background-color: #fbeec1;
+}
+/*Header*/
+.outer-wrap-header {
+  background-color: #fbeec1;
+  .clearfix();
+}
+
+.inner-wrap.inner-wrap-header {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+
+.region-header-col-2 {
+  display: inline;
+  float: left;
+  width: 62%;
+  text-align: center;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+  display: inline;
+  float: left;
+  width: 19%;
+}
+
+
+.info {
+  color: #205791;
+  margin: 1rem;
+}
+.site-logo {
+  display: none;
+}
+
+.site-logo-text a{
+  font-family: "Times New Roman",Times,serif;
+  padding-left: .2em;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  float: left;
+}
+
+.site-logo-text-icon {
+  width: 10rem;
+}
+
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row {
+  max-width: 100%;
+}
+
+/* Content*/
+
+.region-main {
+  display: inline;
+  width:98%;
+  float: left;
+  margin-left: 4%;
+  overflow:auto;
+  &.has-sidebar {
+    margin-left: 0;
+    width: 70%;
+  }
+  &.has-sidebar-left.has-sidebar-right {
+    margin-left: 1%;
+    width: 55%;
+  }
+}
+
+.wrap-all {
+  background-color: whitesmoke;
+}
+
+/* Main aside bars layout */
+
+.inner-wrap {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60%;
+}
+
+.inner-wrap-main {
+  .clearfix();
+  padding: 30px 0;
+}
+.region-sidebar-right,
+.region-sidebar-left {
+  width:30%;
+  float:left;
+}
+
+.region-sidebar-right.has-sidebar-left,
+.region-sidebar-left.has-sidebar-right {
+  width:22%;
+}
+
+
+.region-flash {
+  display: inline;
+  float: left;
+  width: 99%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.figure-left {
+  float: left;
+  display: table;
+  margin-right: 1%;
+}
+
+#small-pic {
+  width: 7vw;
+}
+
+.figure.right {
+  float: right;
+}
+
+
+/* Footer*/
+
+.outer-wrap-footer {
+  background-color: #659dbd;
+}
+
+.inner-wrap-footer {
+  padding: 30px 0;
+}
+
+.region-footer {
+  display: inline;
+  float: left;
+  width: 99%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.footer-column {
+  display: inline;
+  float: left;
+  width: 32%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  height: 100%;
+}
+
+.footer-column-wrapper {
+  border-bottom: 1px solid #666;
+  padding-bottom:6em;
+  margin-bottom: 2em;
+}
+
+.site-footer {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
