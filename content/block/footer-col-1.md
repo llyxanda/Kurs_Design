@@ -1,3 +1,5 @@
-#### Footer col 1
+#### Contact information
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Email: alexandra.berivoe@gmail.com.
+
+Phone number: 0723XXXXXX.
