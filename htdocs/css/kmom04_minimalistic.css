@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /* Import mixins*/
 /**
@@ -327,14 +327,14 @@ template {
  */
 html {
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: #ccc;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 16px/1.5 "sans-serif";
+  font: 16px/1.5 'Source Sans Pro', sans-serif;
 }
 header {
   display: block;
@@ -681,11 +681,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #b8d3ee;
+  background-color: #fff;
 }
 /*Header*/
 .outer-wrap-header {
-  background-color: #b8d3ee;
+  background-color: #fff;
 }
 .inner-wrap.inner-wrap-header {
   margin-right: auto;
@@ -810,7 +810,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 /* Footer*/
 .outer-wrap-footer {
-  background-color: #b8d3ee;
+  background-color: #fff;
 }
 .inner-wrap-footer {
   margin-right: auto;
@@ -5672,3 +5672,13 @@ hr::after {
 /**
   * My own settings, not currently in their own module.
   */
+/**
+  * My own settings, not currently in their own module.
+  */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}

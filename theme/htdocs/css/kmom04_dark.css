@@ -1,7 +1,7 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
- * This stylesheet is for the design course and kmom03 where we use LESS.
+ * This stylesheet is for the design course and kmom04 where we use LESS.
  */
 /* Import mixins*/
 /**
@@ -327,14 +327,14 @@ template {
  */
 html {
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: #1E3742;
 }
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #fff;
-  font: 16px/1.5 "sans-serif";
+  color: whitesmoke;
+  background-color: #162830;
+  font: 16px/1.5 Verdana;
 }
 header {
   display: block;
@@ -681,11 +681,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a {
   color: inherit;
-  background-color: #b8d3ee;
+  background-color: #1E3742;
 }
 /*Header*/
 .outer-wrap-header {
-  background-color: #b8d3ee;
+  background-color: #1E3742;
 }
 .inner-wrap.inner-wrap-header {
   margin-right: auto;
@@ -810,7 +810,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 /* Footer*/
 .outer-wrap-footer {
-  background-color: #b8d3ee;
+  background-color: #1E3742;
 }
 .inner-wrap-footer {
   margin-right: auto;
@@ -5672,3 +5672,14 @@ hr::after {
 /**
   * My own settings, not currently in their own module.
   */
+/**
+  * My own settings, not currently in their own module.
+  */
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+code {
+  background-color: black;
+}

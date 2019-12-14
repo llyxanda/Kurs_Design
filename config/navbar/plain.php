@@ -38,5 +38,10 @@ return [
             "url" => "test",
             "title" => "Test for kmom01",
         ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport/fargschema",
+            "title" => "Rapport Kmom04",
+        ],
     ],
 ];
