@@ -1201,6 +1201,9 @@ hr::after {
     margin-right: 0.52083333%;
   }
 }
+.figure.kmom04 > a img {
+  height: 55rem;
+}
 /**
  * Layout for responsive style through media queries.
  */
