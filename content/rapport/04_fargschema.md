@@ -110,10 +110,5 @@ All the websites are using simple, sans-serif fonts.
 All the websites are using a slightly different font for H1
 
 
-
-Referenser
 -----------------------
-
-Övrigt
------------------------
-
+Written by Alexandra Berivoe
