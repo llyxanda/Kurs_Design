@@ -40,8 +40,13 @@ return [
         ],
         [
             "text" => "Rapport",
-            "url" => "rapport/fargschema",
-            "title" => "Rapport Kmom04",
+            "url" => "rapport/index",
+            "title" => "Rapport",
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg/index",
+            "title" => "Blogg",
         ],
     ],
 ];
