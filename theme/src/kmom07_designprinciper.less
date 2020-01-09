@@ -1,0 +1,320 @@
+/*!
+ * Stylesheet for design kmom06-principer.
+ *
+ * This stylesheet is for the design course and kmom06-principer where we use LESS.
+ */
+/* Import mixins*/
+ @import "mixin/clearfix.less";
+.clearfix() {
+#design-mixin.clearfix();
+}
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+ @import "normalize.css/normalize.less";
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+ //@import "module/kmom01.less";
+
+ /**
+  * Base style to affect HTML elements on a general scale.
+  */
+ @import "base/base_kmom07.less";
+ @import "module/stylechooser.less";
+ 
+
+  /**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+ * Import the vertical grid.
+ */
+ @import "@desinax/vertical-grid/less/grid.less";
+
+
+
+/**
+
+/**
+ * Import the typographic grid.
+ */
+ @import "@desinax/typographic-grid/less/typography-font-families.less";
+ @import "@desinax/typographic-grid/less/typography-defaults.less";
+
+ /**
+ 
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+ //@import "layout/layout.less"; 
+ @import "layout/layout_kmom07.less";
+ @import "layout/responsive.less";
+ @import "layout/regions.less";     // To add style for ?regions
+ 
+
+/**
+ * Font Awesome.
+ */
+ @import "@fortawesome/fontawesome-free/less/fontawesome.less";
+ @import "@fortawesome/fontawesome-free/less/solid.less";
+ @import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * Figure.
+ */
+ @import "@desinax/figure/less/asciinema.less";
+ @import "@desinax/figure/less/codepen.less";
+ @import "@desinax/figure/less/figure.less";
+
+/**
+  * My own settings, not currently in their own module.
+  */
+  
+
+
+  @magicNumber:  26px;
+  @fontSizeBody: 16px; 
+
+  figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+@maxContentWidth: 960px;
+
+.figure {
+  #desinax-figure.figure(@maxContentWidth);
+}
+
+.left,
+.right {
+    @media screen {
+        @media (max-width: round(@maxContentWidth * 2 / 3)) {
+            &.w33 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+                img {
+                    width: @maxContentWidth * 2 / 3;
+                }
+            }
+        }
+    }
+}
+
+
+.figure figcaption {
+  font-size: 0.7rem;
+
+}
+
+blockquote {
+  padding-bottom: 5rem;
+}
+
+
+/**
+  * My own settings, not currently in their own module.
+  */
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url('fonts/SIMPLIFICATypeface.ttf');
+}
+
+@fontFamilyBody: 'Verdana';
+@fontFamilyHeader:  'Verdana';
+
+@colorBody:black;
+@bgColorBody:white;
+@bgColorHtml:white;
+@accentBgColor:black;
+
+@lineHeight: 1.4;
+@mainFontSize: 2rem;
+@mainFontWeight: 2500;
+@headerFontWeight: 150;
+
+a:-webkit-any-link {
+  color:#679817;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+code {
+  background-color: black;
+}
+
+.rm-navbar a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.my-navbar a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article {
+  padding:1.1rem;
+  margin-top: 0.8rem;
+}
+
+.region-footer h4 {
+  border-bottom: none;
+}
+
+.toc, .breadcrumb-list ul {
+  padding: 0em;
+}
+.region-main>.article>h1, 
+.region-main>.article>h2 {
+  font-family: @fontFamilyBody;
+ // font-weight: bold;
+}
+
+
+.article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa-github-square {
+color:white;
+}
+
+.region-flash img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.region-flash img:hover{
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
+.my-navbar li a
+{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.my-navbar li a:before, .my-navbar li a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.my-navbar li a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.my-navbar li a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.my-navbar li a:hover:before, .my-navbar li a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.rm-desktop li a:hover, .rm-desktop li.current-menu-item a {
+  text-decoration: none;
+}
+
+
+
+.my-navbar li a:before
+{
+    position: absolute;
+   // color: #FFF;
+    top: 0px;
+    left: 0px;
+   // padding: 10px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+.my-navbar li a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.site-logo-text-icon img {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
+/* Highlight text in  */
+.my-navbar li a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+.my-navbar li a:before
+{
+    transform: scale(1.2);
+} 
+

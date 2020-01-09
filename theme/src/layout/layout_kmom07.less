@@ -1,0 +1,347 @@
+///* Layout using vgrid */
+
+/*Header*/
+
+/*Navbar*/
+.rm-navbar {
+  text-align: center;
+  font-family: @fontFamilyHeader;
+  font-size: 1.5em;
+  //line-height: 0;
+}
+
+.rm-navbar ul {
+  list-style: none;
+  //margin: 0;
+  //padding: 0;
+}
+
+.my-navbar {
+  list-style-type: none;
+  //padding-top: 10px;
+}
+
+.my-navbar li {
+  display: inline;
+  //padding-top: 2px;
+}
+
+.rm-desktop li {
+  position: relative;
+}
+
+.rm-default li {
+  display: inline-block;
+}
+
+.rm-desktop li a {
+  color: inherit;
+  background-color: @bgColorBody;
+}
+/*Header*/
+.outer-wrap-header {
+  background-color:  @bgColorBody;
+  // .clearfix();
+}
+
+.inner-wrap.inner-wrap-header {
+  //margin-right: auto;
+  //margin-left: auto;
+  //max-width: 100%;
+  #desinax-vgrid.grid(100%);
+}
+
+.region-header-col-2 {
+  display: inline;
+  #desinax-vgrid.column(18);
+  //float: left;
+  //width: 62%;
+  text-align: center;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+  display: inline;
+  #desinax-vgrid.column(3);
+  //float: left;
+  //width: 19%;
+}
+
+.info {
+  color: #205791;
+  //margin: 1rem;
+}
+.site-logo {
+  display: none;
+}
+
+.site-logo-text a {
+  font-family: @fontFamilyHeader;
+  //padding-left: .2em;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  //float: left;
+}
+
+.site-logo-text-icon {
+  //width: 10rem;
+}
+
+.region-breadcrumb {
+  #desinax-vgrid.column(@columns);
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row {
+  //max-width: 100%;
+}
+
+/* Content*/
+
+.region-main {
+  display: inline;
+  #desinax-vgrid.column(18);
+  #desinax-vgrid.push(2);
+  //width:98%;
+  //float: left;
+  //margin-left: 4%;
+  //overflow:auto;
+  &.has-sidebar {
+    //margin-left: 0;
+    //width: 70%;
+    #desinax-vgrid.column(18);
+  }
+  &.has-sidebar-left.has-sidebar-right {
+    //margin-left: 1%;
+    //width: 55%;
+    #desinax-vgrid.column(12);
+  }
+}
+
+//.wrap-all {
+  //background-color: whitesmoke;
+//}
+
+/* Main aside bars layout */
+
+.inner-wrap {
+  //margin-right: auto;
+  //margin-left: auto;
+  //max-width: 60%;
+  #desinax-vgrid.grid(1300px);
+}
+
+.inner-wrap-flash {
+  //margin-right: auto;
+  //margin-left: auto;
+  //max-width: 60%;
+  #desinax-vgrid.grid(100%);
+}
+
+
+.inner-wrap-main {
+  //.clearfix();
+  //padding: 30px 0;
+}
+.region-sidebar-right,
+.region-sidebar-left {
+  #desinax-vgrid.column(6);
+  //width:30%;
+  //float:left;
+}
+
+.region-sidebar-right.has-sidebar-left,
+.region-sidebar-left.has-sidebar-right {
+  //width:22%;
+  #desinax-vgrid.column(6);
+}
+
+.region-flash {
+  display: inline;
+  #desinax-vgrid.column(@columns);
+  //float: left;
+  //width: 99%;
+  //margin-left: 0.5%;
+  //margin-right: 0.5%;
+}
+
+
+
+.author-byline .figure-left {
+  #desinax-vgrid.column(3);
+  font-size: 0.7rem;
+  font-style: italic;
+  //float: left;
+  //width: 99%;
+  //margin-left: 0.5%;
+  //margin-right: 0.5%;
+}
+
+
+.author-byline p {
+  #desinax-vgrid.column(20);
+  font-size: 0.8rem;
+  //float: left;
+  //width: 99%;
+  //margin-left: 0.5%;
+  //margin-right: 0.5%;
+}
+
+//.figure-left {
+  //float: left;
+ // display: table;
+  //margin-right: 1%;
+//}
+
+
+.author-byline {
+  display: inline;
+  #desinax-vgrid.column(@columns);
+  //float: left;
+  //width: 99%;
+  //margin-left: 0.5%;
+  //margin-right: 0.5%;
+}
+
+
+
+#small-pic {
+  //width: 7vw;
+}
+
+.figure.right {
+  //float: right;
+}
+
+/* Footer*/
+
+.outer-wrap-footer {
+  background-color:  @accentBgColor;
+}
+
+.inner-wrap-footer {
+  //padding: 30px 0;
+  #desinax-vgrid.grid(1100px);
+}
+
+.region-footer {
+  display: inline;
+  //float: left;
+  //width: 99%;
+  //margin-left: 0.5%;
+  //margin-right: 0.5%;
+}
+
+.footer-column {
+  #desinax-vgrid.column(@columns / 3);
+  display: inline;
+  //float: left;
+  //width: 32%;
+  //margin-left: 0.5%;
+  //margin-right: 0.5%;
+  //height: 100%;
+}
+
+//.footer-column-wrapper {
+  //border-bottom: 1px solid #666;
+  //padding-bottom:6em;
+  //margin-bottom: 2em;
+//}
+
+.site-footer {
+  text-align: center;
+  #desinax-vgrid.column(@columns);
+  //padding-bottom: 1em;
+  color: white;
+}
+
+///*** Kmom03***///
+
+.row {
+  #desinax-vgrid.row();
+  margin-bottom: 12px;
+}
+
+.vgrid .inner-wrap {
+  @gridImage: "../img/grid_24x30x10-nomargin.png";
+  //@gridImage: "../../img/grid_12x60x20-nomargin.png";
+  #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+  &.inner-wrap-header {
+    #desinax-vgrid.showGrid(@gridImage);
+  }
+}
+
+/** Horisontal grid **/
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+  #desinax-hgrid.showGridAlt();
+}
+
+
+
+
+/** Responsive for grid **/
+@media screen and (max-width: 850px) {
+  .region-main.has-sidebar-right {
+      #desinax-vgrid.column(@columns);
+    }
+
+   .region-sidebar-right {
+    #desinax-vgrid.push(0);
+    #desinax-vgrid.column(@columns);
+   } 
+}
+
+@media screen and (max-width: 1000px) {
+  .region-main {
+    #desinax-vgrid.column(@columns);
+    &.has-sidebar-left.has-sidebar-right {
+      #desinax-vgrid.column(@columns);
+    }
+  }
+  
+  .region-sidebar-right.has-sidebar-left,
+  .region-sidebar-left.has-sidebar-right {
+    #desinax-vgrid.column(@columns);
+  }
+  .region-sidebar-left {
+    #desinax-vgrid.column(@columns);
+  }
+}
+
+.figure.kmom04 > a img  {
+  height: 55rem;
+}
+
+
+
+.article h1 {
+  border-bottom: none;
+}
+
+
+.region-footer {
+  color:white;
+  font-size: 1rem;
+}
+
+
+.article ul li::before {
+  content: '\2022';  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  //font-size:22px;
+}
