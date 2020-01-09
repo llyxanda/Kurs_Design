@@ -1,0 +1,212 @@
+/*!
+ * Stylesheet for design kmom06-element.
+ *
+ * This stylesheet is for the design course and kmom06-element where we use LESS.
+ */
+/* Import mixins*/
+ @import "mixin/clearfix.less";
+.clearfix() {
+#design-mixin.clearfix();
+}
+
+
+
+/**
+ * Normalize and reset the style.
+ */
+ @import "normalize.css/normalize.less";
+
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+ //@import "module/kmom01.less";
+
+ /**
+  * Base style to affect HTML elements on a general scale.
+  */
+ @import "base/base_kmom06.less";
+ @import "module/stylechooser.less";
+ 
+
+  /**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+ * Import the vertical grid.
+ */
+ @import "@desinax/vertical-grid/less/grid.less";
+
+
+
+/**
+
+/**
+ * Import the typographic grid.
+ */
+ @import "@desinax/typographic-grid/less/typography-font-families.less";
+ @import "@desinax/typographic-grid/less/typography-defaults.less";
+
+ /**
+ 
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+ //@import "layout/layout.less"; 
+ @import "layout/layout_kmom06.less";
+ @import "layout/responsive.less";
+ @import "layout/regions.less";     // To add style for ?regions
+ 
+
+/**
+ * Font Awesome.
+ */
+ @import "@fortawesome/fontawesome-free/less/fontawesome.less";
+ @import "@fortawesome/fontawesome-free/less/solid.less";
+ @import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * Figure.
+ */
+ @import "@desinax/figure/less/asciinema.less";
+ @import "@desinax/figure/less/codepen.less";
+ @import "@desinax/figure/less/figure.less";
+
+/**
+  * My own settings, not currently in their own module.
+  */
+  
+
+
+  @magicNumber:  24px;
+  @fontSizeBody: 20px; 
+
+  figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+@maxContentWidth: 960px;
+
+.figure {
+  #desinax-figure.figure(@maxContentWidth);
+}
+
+.left,
+.right {
+    @media screen {
+        @media (max-width: round(@maxContentWidth * 2 / 3)) {
+            &.w33 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+                img {
+                    width: @maxContentWidth * 2 / 3;
+                }
+            }
+        }
+    }
+}
+
+
+.figure figcaption {
+  font-size: 0.7rem;
+
+}
+
+blockquote {
+  padding-bottom: 5rem;
+}
+
+
+/**
+  * My own settings, not currently in their own module.
+  */
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+@font-face {
+  font-family: 'Simplifica';
+  src: url('fonts/SIMPLIFICATypeface.ttf');
+}
+
+@fontFamilyBody: 'Simplifica';
+@fontFamilyHeader:  'Simplifica';
+
+@colorBody:rgb(0, 45, 73);
+@bgColorBody:white;
+@bgColorHtml:#9e4d55;
+@accentBgColor:#9e4d55;
+
+@lineHeight: 1.4;
+@mainFontSize: 2rem;
+@mainFontWeight: 3500;
+@headerFontWeight: 350;
+
+a:-webkit-any-link {
+  color:@colorBody;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+code {
+  background-color: black;
+}
+
+.rm-navbar a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.my-navbar a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.article {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  margin-top: 0.8rem;
+}
+
+.region-footer h4 {
+  border-bottom: none;
+}
+
+.toc, .breadcrumb-list ul {
+  padding: 0em;
+}
+.region-main>.article>h1, 
+.region-main>.article>h2 {
+  color:#033C69;
+  font-family: @fontFamilyBody;
+  font-weight: bold;
+}
+
+
+.article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:-webkit-any-link {
+  color: #0586C7;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+

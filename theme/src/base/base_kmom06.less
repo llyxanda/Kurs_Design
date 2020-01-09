@@ -1,0 +1,46 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    #desinax-hgrid.font(@fontSizeBody);
+    font: @fontFamilyBody;
+    width: 100%;
+
+}
+
+header {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+div {
+    display: block;
+}
+
+ul, ol {
+    list-style-type: none;
+  }
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @fontFamilyBody;
+}
