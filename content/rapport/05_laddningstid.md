@@ -21,6 +21,8 @@ For this analysis, I am looking at each website score on Google's Page Insights 
 
 Resultat
 -----------------------
+[Excel file with results](kmom05_laddningstider.xlsx)
+
 
 ###linneasskafferi.se:
 
